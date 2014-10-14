@@ -1,0 +1,12 @@
+{
+  "name": "build.jermolene.github.io",
+  "description": "Build and release scripts for tiddlywiki.com",
+  "version": "0.0.0",
+  "dependencies": {
+    "tiddlywiki": "5.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jermolene/build.jermolene.github.io.git"
+  }
+}
