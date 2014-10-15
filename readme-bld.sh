@@ -2,12 +2,6 @@
 
 # Build readmes from corresponding tiddlers
 
-# Default to using tw5.com as the main edition
-
-if [  -z "$TW5_BUILD_MAIN_EDITION" ]; then
-    TW5_BUILD_MAIN_EDITION=../TiddlyWiki5/editions/tw5.com
-fi
-
 # Default to the version of TiddlyWiki installed in this repo
 
 if [  -z "$TW5_BUILD_TIDDLYWIKI" ]; then
