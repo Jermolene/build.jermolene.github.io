@@ -69,8 +69,6 @@ echo "<a href='./plugins/tiddlywiki/tahoelafs/index.html'>Moved to http://tiddly
 node $TW5_BUILD_TIDDLYWIKI \
 	$TW5_BUILD_MAIN_EDITION \
 	--verbose \
-	--output . \
-	--build readmes \
 	--output $TW5_BUILD_OUTPUT \
 	--build favicon empty static index \
 	|| exit 1
@@ -84,8 +82,6 @@ node $TW5_BUILD_TIDDLYWIKI \
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/dev \
 	--verbose \
-	--output ../build.jermolene.github.io \
-	--build build-readme \
 	--output $TW5_BUILD_OUTPUT/dev \
 	--build index favicon static \
 	|| exit 1
