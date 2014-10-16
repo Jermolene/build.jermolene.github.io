@@ -15,7 +15,3 @@ npm version $1 -m "Version number update for $1" || exit 1
 # Make sure our tags are pushed to the origin server
 
 git push origin --tags || exit 1
-
-# publish to npm
-
-npm publish || exit 1
