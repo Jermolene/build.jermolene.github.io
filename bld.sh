@@ -99,6 +99,21 @@ node $TW5_BUILD_TIDDLYWIKI \
 	--build encrypted \
 	|| exit 1
 
+
+######################################################
+#
+# Editions
+#
+######################################################
+
+# /editions/translators/index.html	Translators edition
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/translators \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/editions/translators/ \
+	--build index \
+	|| exit 1
+
 ######################################################
 #
 # Plugin demos
@@ -110,7 +125,6 @@ node $TW5_BUILD_TIDDLYWIKI \
 
 # TODO: Build the static file with the release of 5.1.3
 #	--rendertiddler $:/core/templates/static.template.html plugins/tiddlywiki/katex/static.html text/plain \
-
 
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/katexdemo \
