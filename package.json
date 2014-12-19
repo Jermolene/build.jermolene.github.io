@@ -3,7 +3,7 @@
   "description": "Build and release scripts for tiddlywiki.com",
   "version": "0.0.0",
   "dependencies": {
-    "tiddlywiki": "5.1.6"
+    "tiddlywiki": "5.1.7"
   },
   "repository": {
     "type": "git",
