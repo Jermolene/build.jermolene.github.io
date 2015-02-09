@@ -212,6 +212,19 @@ node $TW5_BUILD_TIDDLYWIKI \
 
 ######################################################
 #
+# Plugin library
+#
+######################################################
+
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/pluginlibrary \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT \
+	--build \
+	|| exit 1
+
+######################################################
+#
 # Tests
 #
 ######################################################
