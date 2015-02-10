@@ -61,9 +61,8 @@ node $TW5_BUILD_TIDDLYWIKI \
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/fr-FR \
 	--verbose \
-	--output $TW5_BUILD_OUTPUT \
-	--rendertiddler $:/core/save/all languages/fr-FR/index.html text/plain \
-	--rendertiddler $:/core/save/empty languages/fr-FR/empty.html text/plain \
+	--output $TW5_BUILD_OUTPUT/languages/fr-FR \
+	--build index empty \
 	|| exit 1
 
 # /languages/zh-Hans/index.html		Demo wiki with zh-Hans language
