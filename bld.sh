@@ -122,6 +122,14 @@ node $TW5_BUILD_TIDDLYWIKI \
 	--build index \
 	|| exit 1
 
+# /editions/full/index.html	Full edition
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/full \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/editions/full/ \
+	--build index \
+	|| exit 1
+
 ######################################################
 #
 # Plugin demos
