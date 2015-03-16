@@ -2,6 +2,12 @@
 
 # Build all tiddlywiki.com assets using the version of tiddlywiki specified in package.json
 
+# Default to the current version
+
+if [  -z "$TW5_BUILD_VERSION" ]; then
+    TW5_BUILD_VERSION=v5.1.8
+fi
+
 # Default to using tw5.com as the main edition
 
 if [  -z "$TW5_BUILD_MAIN_EDITION" ]; then
@@ -227,7 +233,7 @@ node $TW5_BUILD_TIDDLYWIKI \
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/pluginlibrary \
 	--verbose \
-	--output $TW5_BUILD_OUTPUT \
+	--output $TW5_BUILD_OUTPUT/library/$TW5_BUILD_VERSION \
 	--build \
 	|| exit 1
 
