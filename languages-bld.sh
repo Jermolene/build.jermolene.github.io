@@ -70,9 +70,8 @@ node $TW5_BUILD_TIDDLYWIKI \
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/zh-Hans \
 	--verbose \
-	--output $TW5_BUILD_OUTPUT \
-	--rendertiddler $:/core/save/all languages/zh-Hans/index.html text/plain \
-	--rendertiddler $:/core/save/empty languages/zh-Hans/empty.html text/plain \
+	--output $TW5_BUILD_OUTPUT/languages/zh-Hans \
+	--build empty index \
 	|| exit 1
 
 # /languages/zh-Hant/index.html		Demo wiki with zh-Hant language
@@ -80,7 +79,6 @@ node $TW5_BUILD_TIDDLYWIKI \
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/zh-Hant \
 	--verbose \
-	--output $TW5_BUILD_OUTPUT \
-	--rendertiddler $:/core/save/all languages/zh-Hant/index.html text/plain \
-	--rendertiddler $:/core/save/empty languages/zh-Hant/empty.html text/plain \
+	--output $TW5_BUILD_OUTPUT/languages/zh-Hant \
+	--build empty index \
 	|| exit 1
