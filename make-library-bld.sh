@@ -5,7 +5,7 @@
 # Default to the current version
 
 if [  -z "$TW5_BUILD_VERSION" ]; then
-    TW5_BUILD_VERSION=v5.1.8
+    TW5_BUILD_VERSION=v5.1.9
 fi
 
 # Use the pre-release edition as the main edition
