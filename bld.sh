@@ -112,6 +112,22 @@ node $TW5_BUILD_TIDDLYWIKI \
 #
 ######################################################
 
+# /editions/resumebuilder/index.html	Resume builder edition
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/resumebuilder \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/editions/resumebuilder/ \
+	--build index \
+	|| exit 1
+
+# /editions/text-slicer/index.html	Text slicer edition
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/text-slicer \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/editions/text-slicer/ \
+	--build index \
+	|| exit 1
+
 # /editions/translators/index.html	Translators edition
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/translators \
