@@ -152,6 +152,14 @@ node $TW5_BUILD_TIDDLYWIKI \
 	--build index \
 	|| exit 1
 
+# /editions/tw5.com-docs/index.html	tiddlywiki.com docs edition
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/tw5.com-docs \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/editions/tw5.com-docs/ \
+	--build index \
+	|| exit 1
+
 ######################################################
 #
 # Plugin demos
