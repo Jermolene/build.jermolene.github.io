@@ -5,7 +5,7 @@
 # Default to the current version
 
 if [  -z "$TW5_BUILD_VERSION" ]; then
-    TW5_BUILD_VERSION=v5.1.9
+    TW5_BUILD_VERSION=v5.1.11
 fi
 
 # Default to using tw5.com as the main edition

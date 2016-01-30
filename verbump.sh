@@ -4,7 +4,7 @@
 
 if [ -z "$1" ]
   then
-    echo "Missing version (eg '5.0.0-alpha')"
+    echo "Missing version (eg '5.1.38-prerelease')"
     exit 1
 fi
 
