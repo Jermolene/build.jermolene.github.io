@@ -24,5 +24,5 @@ node $TW5_BUILD_TIDDLYWIKI \
 	$TW5_BUILD_MAIN_EDITION \
 	--verbose \
 	--output $TW5_BUILD_OUTPUT \
-	--build favicon empty index \
+	--build favicon index \
 	|| exit 1
