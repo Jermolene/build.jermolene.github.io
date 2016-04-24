@@ -62,7 +62,25 @@ node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/fr-FR \
 	--verbose \
 	--output $TW5_BUILD_OUTPUT/languages/fr-FR \
-	--build index empty \
+	--build empty index \
+	|| exit 1
+
+# /languages/ja-JP/index.html		Demo wiki with ja-JP language
+# /languages/ja-JP/empty.html		Empty wiki with ja-JP language
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/ja-JP \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/languages/ja-JP \
+	--build empty index \
+	|| exit 1
+
+# /languages/ko-KR/index.html		Demo wiki with ko-KR language
+# /languages/ko-KR/empty.html		Empty wiki with ko-KR language
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/ko-KR \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/languages/ko-KR \
+	--build empty index \
 	|| exit 1
 
 # /languages/zh-Hans/index.html		Demo wiki with zh-Hans language
