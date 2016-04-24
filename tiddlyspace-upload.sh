@@ -28,3 +28,7 @@ cat tmp/tiddlyweb.html >> tmp/tiddlerforupload.txt
 # Upload the tiddler file
 
 curl -u $1:$2 -X PUT -H "content-type: text/plain" http://tw5tiddlyweb.tiddlyspace.com/bags/tw5tiddlyweb_public/tiddlers/tw5 --data-binary @tmp/tiddlerforupload.txt
+
+rm tmp/tiddlyweb.html
+
+rm tmp/tiddlerforupload.txt
