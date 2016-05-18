@@ -56,6 +56,15 @@ node $TW5_BUILD_TIDDLYWIKI \
 	--build favicon empty static index \
 	|| exit 1
 
+# /languages/es-ES/index.html		Demo wiki with es-ES language
+# /languages/es-ES/empty.html		Empty wiki with es-ES language
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/es-ES \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/languages/es-ES \
+	--build favicon empty static index \
+	|| exit 1
+
 # /languages/fr-FR/index.html		Demo wiki with fr-FR language
 # /languages/fr-FR/empty.html		Empty wiki with fr-FR language
 node $TW5_BUILD_TIDDLYWIKI \
