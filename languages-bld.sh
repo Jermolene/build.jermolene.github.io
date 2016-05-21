@@ -29,8 +29,14 @@ echo "Using TW5_BUILD_OUTPUT as [$TW5_BUILD_OUTPUT]"
 
 # Delete any existing static content
 
-rm $TW5_BUILD_OUTPUT/languages/de_AT/static/*
-rm $TW5_BUILD_OUTPUT/languages/de_DE/static/*
+rm $TW5_BUILD_OUTPUT/languages/de-AT/static/*
+rm $TW5_BUILD_OUTPUT/languages/de-DE/static/*
+rm $TW5_BUILD_OUTPUT/languages/es-ES/static/*
+rm $TW5_BUILD_OUTPUT/languages/fr-FR/static/*
+rm $TW5_BUILD_OUTPUT/languages/ja-JP/static/*
+rm $TW5_BUILD_OUTPUT/languages/ko-KR/static/*
+rm $TW5_BUILD_OUTPUT/languages/zh-Hans/static/*
+rm $TW5_BUILD_OUTPUT/languages/zh-Hant/static/*
 
 ######################################################
 #
@@ -71,7 +77,7 @@ node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/fr-FR \
 	--verbose \
 	--output $TW5_BUILD_OUTPUT/languages/fr-FR \
-	--build empty index \
+	--build favicon empty static index \
 	|| exit 1
 
 # /languages/ja-JP/index.html		Demo wiki with ja-JP language
@@ -89,7 +95,7 @@ node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/ko-KR \
 	--verbose \
 	--output $TW5_BUILD_OUTPUT/languages/ko-KR \
-	--build empty index \
+	--build favicon empty static index \
 	|| exit 1
 
 # /languages/zh-Hans/index.html		Demo wiki with zh-Hans language
