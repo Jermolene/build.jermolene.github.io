@@ -112,6 +112,14 @@ node $TW5_BUILD_TIDDLYWIKI \
 #
 ######################################################
 
+# /editions/xlsx-utils/index.html	xlsx-utils edition
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/xlsx-utils \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT/editions/xlsx-utils/ \
+	--build index \
+	|| exit 1
+
 # /editions/resumebuilder/index.html	Resume builder edition
 node $TW5_BUILD_TIDDLYWIKI \
 	../TiddlyWiki5/editions/resumebuilder \
