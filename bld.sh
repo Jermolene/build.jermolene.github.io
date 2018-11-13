@@ -174,6 +174,17 @@ node $TW5_BUILD_TIDDLYWIKI \
 #
 ######################################################
 
+# /plugins/tiddlywiki/dynaview/index.html	Demo wiki with DynaView plugin
+# /plugins/tiddlywiki/dynaview/empty.html	Empty wiki with DynaView plugin
+
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/dynaviewdemo \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT \
+	--rendertiddler $:/core/save/all plugins/tiddlywiki/dynaview/index.html text/plain \
+	--rendertiddler $:/core/save/empty plugins/tiddlywiki/dynaview/empty.html text/plain \
+	|| exit 1
+
 # /plugins/tiddlywiki/katex/index.html	Demo wiki with KaTeX plugin
 # /plugins/tiddlywiki/katex/empty.html	Empty wiki with KaTeX plugin
 
