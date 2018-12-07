@@ -4,7 +4,7 @@
 
 # Default to the current version
 
-export TW5_BUILD_VERSION=v5.1.18
+export TW5_BUILD_VERSION=v5.1.19
 
 # Use the pre-release edition as the main edition
 
