@@ -62,8 +62,6 @@ echo "<a href='./plugins/tiddlywiki/tahoelafs/index.html'>Moved to http://tiddly
 
 # /index.html			Main site
 # /favicon.ico			Favicon for main site
-# /empty.html			Empty
-# /empty.hta			For Internet Explorer
 # /static.html			Static rendering of default tiddlers
 # /alltiddlers.html		Static rendering of all tiddlers
 # /static/*				Static single tiddlers
@@ -73,7 +71,16 @@ node $TW5_BUILD_TIDDLYWIKI \
 	$TW5_BUILD_MAIN_EDITION \
 	--verbose \
 	--output $TW5_BUILD_OUTPUT \
-	--build favicon empty static index \
+	--build favicon static index \
+	|| exit 1
+
+# /empty.html			Empty
+# /empty.hta			For Internet Explorer
+node $TW5_BUILD_TIDDLYWIKI \
+	../TiddlyWiki5/editions/empty \
+	--verbose \
+	--output $TW5_BUILD_OUTPUT \
+	--build empty \
 	|| exit 1
 
 # /dev/index.html			Developer docs
