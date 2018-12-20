@@ -5,7 +5,7 @@
 # Default to the current version number for building the plugin library
 
 if [  -z "$TW5_BUILD_VERSION" ]; then
-    TW5_BUILD_VERSION=v5.1.18
+    TW5_BUILD_VERSION=v5.1.19
 fi
 
 # Default to using tw5.com as the main edition

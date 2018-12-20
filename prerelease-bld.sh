@@ -2,9 +2,9 @@
 
 # Build all tiddlywiki.com assets using the version of tiddlywiki specified in package.json
 
-# Default to the current version
+# Default to the current version (for plugin library etc)
 
-export TW5_BUILD_VERSION=v5.1.19
+export TW5_BUILD_VERSION=v5.1.20
 
 # Use the pre-release edition as the main edition
 
